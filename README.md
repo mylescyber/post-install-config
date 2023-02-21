@@ -6,9 +6,7 @@
 This tutorial outlines the post-install configuration of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
 
-- ### [YouTube: How To Configure osTicket, post-installation](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -22,34 +20,35 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Post-Install Configuration Objectives</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Reload IIS and Enable Extensions in IIS
+- Continue Setting up osTicket in the browser
+- Download and Install HeidiSQL
+- Continue Setting up osticket in the browser
+- Clean up
 
 <h2>Configuration Steps</h2>
 
+
+![php enable](https://user-images.githubusercontent.com/59034949/211162308-149ec4c3-fa10-4620-af19-3230bfd6272e.png)
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After installation Go to sites -> Default -> osTicket and  click “Browse *:80”. From there enable extensions in IIS. Then go back to IIS, sites -> Default -> osTicket. Double-click PHP manager and Click “Enable or disable an extension”.
 </p>
 <br />
 
+![dpermissions](https://user-images.githubusercontent.com/59034949/211162082-8e2baa7b-2879-47ad-9765-5df12cdd29b1.png)
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Assign Permissions: ost-config.php. Disable inheritance -> Remove All, New Permissions -> Everyone -> All.
 </p>
 <br />
 
+![hedi](https://user-images.githubusercontent.com/59034949/211162120-8b609bad-0d51-4cc7-b4aa-6dbefae658bf.png)
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Download, install and open HeidiSQL. Create a new session and create a database called “osTicket”. Continue Setting up osTicket in the browser and click “Install Now!”
 </p>
 <br />
